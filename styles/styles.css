@@ -1,56 +1,74 @@
-:root {
-    --primary-color: rgb(0 0 139);
-    --border: 1px solid rgb(0 0 0 / 0.2);
-}
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
 
-nav {
-    background-color: var(--primary-color);
-    padding: 10px;
-}
+ :root {
+     --primary-color: rgb(0 0 139);
+     --border: 1px solid rgb(0 0 0 / 0.2);
+ }
 
-nav a {
-    color: white;
-    display: block;
-    padding: 20px;
-}
+ nav {
+     background-color: var(--primary-color);
+     padding: 10px;
+ }
 
-main {
-    max-width: 840px;
-}
+ nav a {
+     color: white;
+     display: block;
+     padding: 20px;
+ }
 
-h1 {
-    color: var(--primary-color);
-}
+ main {
+     max-width: 840px;
+ }
 
-main img {
-    width: 150px;
-    height: auto;
-    border: var(--border);
-    padding: 2px;
-    box-shadow: 0 0 30px gray;
-}
+ h1 {
+     color: var(--primary-color);
+ }
 
-p {
-    padding: 0;
-}
+ main img {
+     width: 150px;
+     height: auto;
+     border: var(--border);
+     padding: 2px;
+     box-shadow: 0 0 30px gray;
+     float: right;
+ }
 
-aside {
-    width: 20rem;
-    margin: 1rem;
-    border: var(--border);
-    padding: 1rem;
-    background-color: yellowgreen;
-    color: #333;
-    text-align: center;
-}
+ p {
+     padding: 0;
+ }
 
-aside img {
-    width: 200px;
-    height: auto;
-}
+ aside {
+     width: 20rem;
+     text-align: center;
+     position: relative;
+ }
 
-footer {
-    margin-top: 15px;
-    border-top: var(--border);
-    text-align: center;
-}
+ aside img {
+     width: 200px;
+     height: auto;
+ }
+
+ aside h2 {
+     position: absolute;
+     top: 15px;
+     left: 110px;
+ }
+
+ footer {
+     margin-top: 15px;
+     border-top: var(--border);
+     text-align: center;
+ }
+
+ /* Class Selectors */
+ .box {
+     margin: 1rem;
+     border: 1px solid rgb(0 0 0 / 10%);
+     padding: 1rem;
+     background-color: grey;
+     color: black;
+ }
